@@ -1,6 +1,8 @@
 import { useState, useRef } from 'react';
 import { Search, TrendingUp, Sparkles, BarChart3, Shield, ArrowRight, Users, LineChart, Globe, Zap } from 'lucide-react';
 import StackedTrendingCards from './StackedTrendingCards';
+import lp1img from "../assets/Screenshot 2025-10-03 at 11.53.06.png";
+import lp2img from "../assets/Screenshot 2025-10-03 at 11.52.56.png";
 
 interface DashboardProps {
   onNavigateToNewAnalysis: () => void;
@@ -131,7 +133,7 @@ export default function Dashboard({ onNavigateToNewAnalysis, onNavigateToSearch,
 
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/10 group-hover:border-blue-400/50 transition-all duration-700">
                 <img
-                  src="/src/assets/Screenshot 2025-10-03 at 11.53.06.png"
+                  src={lp1img}
                   alt="Domain Analysis Dashboard"
                   className="w-full h-auto"
                 />
@@ -180,7 +182,7 @@ export default function Dashboard({ onNavigateToNewAnalysis, onNavigateToSearch,
 
               <div className="relative rounded-2xl overflow-hidden shadow-xl border-2 border-gray-200 group-hover:border-orange-300 transition-all duration-700">
                 <img
-                  src="/src/assets/Screenshot 2025-10-03 at 11.52.56.png"
+                  src={lp2img}
                   alt="Domain Market Intelligence"
                   className="w-full h-auto"
                 />
